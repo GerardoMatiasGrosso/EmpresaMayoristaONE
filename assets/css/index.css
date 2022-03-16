@@ -62,6 +62,8 @@ h1{
 
 /* Header and navbar */
 
+
+
 header{
     background-image: linear-gradient(to left, #050a37, #004484, #007fa7, #00b984, #5feb12);
 }
@@ -92,6 +94,8 @@ header{
 
 }
 
+
+
 .navbar__barra{
     display: flex;
     justify-self: end;
@@ -113,6 +117,7 @@ header{
     color: aliceblue;
     font-size: 1.7rem;
 }
+
 
 /* Body Styles */
 
