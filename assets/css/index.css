@@ -1,0 +1,350 @@
+
+/* normalize */
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* globals */
+
+html{
+    
+    font-size: 62.5%;
+
+
+}
+
+
+ul{
+   list-style-type: none;
+}
+
+a{
+    color: white;
+    font-size: 1.7 em;
+    text-decoration: none;
+    text-decoration: solid;
+    display: inline-block
+
+}
+
+
+body{
+    display: grid;
+    grid-template-rows: auto 0.2fr 0.5fr 0.3fr auto;  
+    min-height: 15vh;
+}
+
+/* Titulo principal */
+
+h1{
+   
+    color: white;
+    font-size: 1rem;
+    padding-left: 1em;
+    -webkit-text-stroke: 0.5px black;
+    font-size: larger;
+    font-family: sans-serif;
+    
+}
+
+
+/* helpers */
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+  
+}
+
+/* Header and navbar */
+
+header{
+    background-image: linear-gradient(to left, #050a37, #004484, #007fa7, #00b984, #5feb12);
+}
+
+.navbar{
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    row-gap: 10px;
+    column-gap: 5px;
+    
+    
+    
+}
+
+.navbar__redes{
+    display: flex;
+    justify-self: end;
+    padding-right: 1em;
+
+}
+
+.logosRedes__forma{
+    max-width: 50px;
+    max-height: 50px;
+    margin: 5px;
+
+}
+
+.navbar__barra{
+    display: flex;
+    justify-self: end;
+    align-self: end;
+    padding-bottom: 10px;
+
+
+    
+}
+
+.navbar__logo{
+    padding-bottom: 1rem;
+    grid-row: 1/3 ;
+}
+
+
+.navbar__barra__item{
+    padding: 0.9em;
+    color: aliceblue;
+    font-size: 1.7rem;
+}
+
+/* Body Styles */
+
+
+body{
+    background-color: rgb(152, 209, 152);
+    background-image: url(../imagenes/blob-haikei.svg);
+}
+
+.galeriaImagnes__index{
+    display: flex;
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+.galeriaImagenes__index__radio{
+    border-radius: 50%;
+    width: 100%;
+}
+
+
+.cuerpo{
+    display: flex;
+    flex-grow: 1;
+    gap: 2rem;
+    
+}
+
+.cuerpo_picture{
+    flex-basis: 50%;
+}
+
+.cuerpo_img{
+    max-width: 100%;
+}
+
+.cuerpoParrafo_dos{
+    flex-basis: 33%;
+    color: black;
+}
+
+.cuerpoParrafo__uno{
+    flex-basis: 33%;
+    color: black;
+    
+}
+
+.imagenesMercado{
+    display: flex;
+    flex-grow: 1;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.imagenesMercado_contenedor{
+
+    flex-basis: 100%;
+}
+
+.imagenesMercado_formato{
+    max-width: 100%;
+}
+
+
+/* footer styles */
+
+.pie{
+    
+     font-size: x-large;
+     justify-content: center;
+}
+
+
+/* styles nosotros */
+
+.tituloNosotros{
+    padding: 50px;
+}
+
+
+.segmentosIndustria{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(3,auto);
+    align-content: center;
+    gap: 3rem;
+}
+
+
+.segmentosIndustria__imagenes__formato{
+
+    max-width: 150px;
+    min-height: 500pxpx;
+
+}
+
+.segmentosIndustria__formato{
+
+}
+
+.textoImagenes__formato{
+    color: black;
+    text-decoration: dashed;
+
+}
+
+/* styles nosotros */
+
+
+.seccionNoticia{
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+}
+
+.seccionNoticia__parrafo__imagen{
+
+    font-size: 1em;
+    padding-left: 10px;
+    padding-right: 10px;
+
+
+
+}
+
+.seccionNoticia__imagen__formato{
+    width: 100%em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+/* MEDIA QUERIS */
+
+@media screen and (max-width: 738px ) {
+
+
+/* HEADER AND NAVBAR */
+
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    
+    .navbar__redes{
+
+        flex-grow: 1;
+        align-self: center;
+    }
+    
+    .logosRedes__forma{
+
+    flex-grow: 1;}
+    
+.navbar__img__logo{
+    width: 100%;
+    align-self: center;
+}
+
+.navbar__logo{
+    align-self: center;
+}
+
+.galeriaImagenes__index__radio{
+    width: 100%;
+}
+.galeriaImagenes__item5{
+    grid-row: 3/4;
+    grid-column: 1/3 ;
+    align-self: center;
+    justify-self: center;
+}
+
+.cuerpoParrafo_dos{
+    flex-basis: 33%;
+    color: black;
+    font-size: 0.6rem;
+
+}
+
+.cuerpoParrafo__uno{
+    flex-basis: 33%;
+    color: black;
+    font-size: 0.6rem;
+    
+}
+
+
+.imagenesMercado{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
+    margin: 100px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    
+}
+
+
+.imagenesMercado_formato{
+    width: 100%;
+    border: white solid 2px;
+    ;
+}
+
+.pieFormato{
+    font-size: xx-small;
+}
+
+/* queris nosotros */
+
+.seccionNoticia{
+    display: flex;
+}
+
+.seccionNoticia__parrafo__imagen{
+
+    font-size: 0.4em;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.seccionNoticia__imagen__formato{
+    width: 50em;
+    margin-left: 100px;
+}
+
+
+
+}
