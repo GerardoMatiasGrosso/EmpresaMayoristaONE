@@ -282,6 +282,7 @@ body{
 
 .galeriaImagenes__index__radio{
     width: 100%;
+    transform: rotate(60deg);
 }
 .galeriaImagenes__item5{
     grid-row: 3/4;
