@@ -251,6 +251,25 @@ body{
     
 }
 
+/* Styles TEAM */
+
+.sectionTeam{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    align-items: center;
+}
+
+.teamTitulos{
+    padding: 60px;
+}
+
+
+/* style nosotros */
+
+
+
+
 /* MEDIA QUERIS */
 
 @media screen and (max-width: 738px ) {

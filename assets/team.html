@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/assets/css/index.css">
     <title>Document</title>
 </head>
-<body>
+<body class="container-fluid">
     <h1 class="tituloPrincipal container">AGRODETUTTI@AGRODETUTTI.COM.AR</h1>
     <header>
        <nav class="navbar container">
@@ -42,33 +42,48 @@
                 <h3 class="tituloPrimario__team">¿QUERES SER PARTE DE NUESTRO TEAM? </h1>
                 <h4 class="tituloSecundario__team">Dejanos tus datos</h2>
         </article>            
-        <article class="formulario">
-                <form action="">
-                    <div class="elementoFormulario">
-                        <label for="nombre">
-                             <span>¿Cuál es tu nombre?</span>
-                             <input type="text" placeholder="Tu nombre">
-                        </label>
-                    </div>
-                    <div class="elementoFormulario">
-                        <label for="Telefonos">
-                        <span>Dejanos tu telefono</span>
-                        <input type="tel" placeholder=" Ej: 1121447845">
-                        </label>
-                    </div>
-                    <div class="elementoFormulario"></div>   
-                        <label for="Mails">
-                            <span>Dejanos tu mail</span>
-                            <input type="text" placeholder=" ejemplo@ejemplo.com.ar">
-                        </label>
-                            <input type="submit" value="ENVIAR">
-                            <input type="reset" value="Limpiar fomrulario">
-                            <input type="button" value="Sin Acciones">
-                    </div>        
-                </form>
-            </article>     
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="validationCustom01" value="Dejanos tu nombre!!!" required>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="validationCustom02" value="Dejanos tu" required>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustomUsername" class="form-label"></label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">Dejanos tu mail</span>
+                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom03" class="form-label">Localidad</label>
+              <input type="text" class="form-control" id="validationCustom03" required>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom04" class="form-label">Provincia</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Seleccionar...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom05" class="form-label">Codigo Postal</label>
+              <input type="text" class="form-control" id="validationCustom05" required>
+            </div>
+            <div class="col-12">
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+          </form>
+
+          
+
     </section>         
-    <p calss="parrafoTeam">Ya sea que quieras trabajar con nostros siendo parte del TEAM o te gustaria representarnos en algun lugar del mundo, dejanos tus datos que te contactamos!!</p>           
+    <p calss="parrafoTeam container-fluid">Ya sea que quieras trabajar con nostros siendo parte del TEAM o te gustaria representarnos en algun lugar del mundo, dejanos tus datos que te contactamos!!</p>           
 </body>
 <footer>
          
