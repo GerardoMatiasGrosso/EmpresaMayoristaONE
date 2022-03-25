@@ -1,0 +1,87 @@
+/* styles nosotros */
+
+.tituloNosotros{
+    padding: 50px;
+}
+
+
+.segmentosIndustria{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(3,auto);
+    align-content: center;
+    gap: 3rem;
+}
+
+
+.segmentosIndustria__imagenes__formato{
+
+    max-width: 150px;
+    min-height: 500pxpx;
+
+}
+
+
+
+.textoImagenes__formato{
+    color: black;
+    text-decoration: dashed;
+
+}
+
+/* styles nosotros */
+
+
+.seccionNoticia{
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+}
+
+.seccionNoticia__parrafo__imagen{
+
+    font-size: 1em;
+    padding-left: 10px;
+    padding-right: 10px;
+
+
+
+}
+
+.seccionNoticia__imagen__formato{
+    width: 100%em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+
+/* MEDIA QUERIS */
+
+@media screen and (max-width: 738px ) {
+
+
+
+    
+    /* queris nosotros */
+    
+    .seccionNoticia{
+        display: flex;
+    }
+    
+    .seccionNoticia__parrafo__imagen{
+    
+        font-size: 0.4em;
+        padding-left: 10px;
+        padding-right: 10px;
+    
+    }
+    
+    .seccionNoticia__imagen__formato{
+        width: 50em;
+        margin-left: 100px;
+    }
+    
+    
+    
+    }
